@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-/* =========================
-   RESET / GLOBAL
-========================= */
+   /* GLOBAL */
 :root {
 
        /* BRAND COLORS */
@@ -42,8 +40,6 @@
     --footer-bg: #0F172A;
     --footer-text: #FFFFFF;
 }
-
-
 
 * {
     padding: 0;
@@ -90,11 +86,7 @@ img {
     left: 0;
     width: 100%;
     height: 2px;
-
-    background: linear-gradient(to left, var(--color-primary-light),
-        var(--color-primary)
-    );
-
+    background: linear-gradient(to left, var(--color-primary-light),var(--color-primary));
     transform-origin: right;
     transform: scaleX(0);
     transition: transform 0.4s ease-in-out;
@@ -133,24 +125,17 @@ img {
     font-size: 1.2rem;
     position: absolute;
     inset: 0;
-
     padding: 40px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
     background: var(--overlay-dark);
-    
     color: var(--color-text-white);
-
     opacity: 0;
     transform: translateY(20px);
-
-    transition: opacity 0.4s ease-in-out,
-                transform 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out,transform 0.4s ease-in-out;
 }
 
 .course-card:hover .course-image {
@@ -162,9 +147,7 @@ img {
     transform: translateY(0);
 }
 
-/* =========================
-   HEADER
-========================= */
+   /* HEADER */
 
 .head {
     display: flex;
@@ -203,27 +186,16 @@ img {
 .head-nav a {
     color: var(--color-text);
 }
-
-
-/* =========================
-   HERO
-========================= */
+   /* HERO */
 
 .hero {
     min-height: 90vh;
-
-    background:
-        linear-gradient(var(--overlay-dark),rgba(37, 99, 235, 0.45) ),
-        url(../bg-images/bg_tutor.avif)
-        no-repeat center/cover;
-
+    background: linear-gradient(var(--overlay-dark),rgba(37, 99, 235, 0.45) ), url(../bg-images/bg_tutor.avif) no-repeat center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
     padding: 70px 20px 20px;
-
     color: var(--color-text-white);
 }
 
@@ -243,10 +215,8 @@ img {
     display: inline-block;
     margin: 50px auto;
     padding: 10px 20px;
-
     background-color: var(--button-primary);
     color: var(--button-text);
-
     border-radius: 5px;
     transition: transform 0.3s ease;
     /* font-size: 1.5rem; */
@@ -259,11 +229,7 @@ img {
     background-color: var(--button-hover);
 }
 
-
-/* =========================
-   ABOUT
-========================= */
-
+   /* ABOUT */
 .about-wrapper {
     padding: 10px;
     background-color: var(--color-bg);
@@ -279,17 +245,11 @@ img {
     color: var(--color-text);
 }
 
-
-/* =========================
-   COURSES
-========================= */
-
+   /* COURSES */
 .course-wrapper {
     margin: 90px auto;
     padding: 10px;
-
     text-align: center;
-
     background-color: var(--color-bg-section);
 }
 
@@ -323,11 +283,7 @@ img {
     line-height: 1.6;
 }
 
-
-/* =========================
-   BLOG
-========================= */
-
+   /* BLOG */
 .blog-wrapper {
     padding: 10px;
     text-align: center;
@@ -368,11 +324,7 @@ img {
     margin: 10px 0;
 }
 
-
-/* =========================
-   CONTACT
-========================= */
-
+   /* CONTACT */
 .sec-5 {
     padding: 10px;
     text-align: center;
@@ -437,11 +389,7 @@ img {
     height: 400px;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
-
+   /* FOOTER */
 .foot {
     width: 100%;
     background-color: var(--footer-bg);
@@ -545,11 +493,7 @@ img {
     line-height: 1.6;
 }
 
-
-/* =========================
-   TABLET
-========================= */
-
+   /* TABLET */
 @media (min-width: 768px) {
 
     /* About */
@@ -566,14 +510,12 @@ img {
         width: 48%;
     }
 
-
     /* Courses */
 
     .course-image {
         width: 59%;
         border-radius: 20px;
     }
-
 
     /* Blog */
 
@@ -595,7 +537,6 @@ img {
         height: 50vh;
         object-fit: cover;
     }
-
 
     /* Contact */
 
@@ -636,7 +577,6 @@ img {
         /* font-size: 1.2rem; */
     }
 
-
     /* Footer */
 
     .foot {
@@ -649,9 +589,7 @@ img {
         gap: 4%;
     }
 
-    .about,
-    .links,
-    .link {
+    .about, .links, .link {
         width: 48%;
     }
 
@@ -660,11 +598,7 @@ img {
     }
 }
 
-
-/* =========================
-   DESKTOP
-========================= */
-
+   /* DESKTOP */
 @media (min-width: 1024px) {
 
     /* Header */
@@ -711,9 +645,7 @@ img {
         gap: 40px;
     }
 
-    .about,
-    .links,
-    .link {
+    .about, .links, .link {
         width: 25%;
         margin-bottom: 0;
     }
