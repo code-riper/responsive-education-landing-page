@@ -30,9 +30,9 @@ A responsive education and online learning website built using **HTML5 and CSS3*
 
 The website follows a responsive approach with layouts designed for different screen sizes.
 
-* **Mobile:** 
-* **Tablet:**  
-* **Desktop:** 
+* **Mobile** 
+* **Tablet**  
+* **Desktop** 
 
 The layout changes according to the available screen width using CSS media queries.
 
