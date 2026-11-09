@@ -19,12 +19,8 @@ A responsive education and online learning website built using **HTML5 and CSS3*
 
 * HTML5
 * CSS3
-* Flexbox
-* Media Queries
-* Responsive Web Design
 * Font Awesome
 * Remix Icon
-* Google Maps Embed
 
 ## Responsive Design
 
